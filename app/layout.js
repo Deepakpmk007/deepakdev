@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import "./globals.css";
 import { Martian_Mono, Playwrite_AU_SA, Righteous } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const martian = Martian_Mono({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
       <body className="bg-[#f1faee]">
         <Nav />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
