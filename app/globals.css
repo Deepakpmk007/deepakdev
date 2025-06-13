@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+}
+
+.list > li {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.list > li > span {
+  color: rgb(36, 192, 36);
+}
